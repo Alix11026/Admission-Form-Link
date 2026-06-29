@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<link rel="icon" type="image/png" href="logo.png" />
+<link rel="apple-touch-icon" href="logo.png" />
+<title>Admission Application — Z Next Gen Education System</title>
+<meta name="description" content="Apply for admission at Z Next Gen Education System. A premium, simple, step-by-step admission experience." />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        fontFamily: { display: ['"SF Pro Display"', '-apple-system', 'BlinkMacSystemFont', 'Inter', 'system-ui', 'sans-serif'] },
+        colors: {
+          background: 'var(--background)',
+          foreground: 'var(--foreground)',
+          surface: 'var(--surface)',
+          'surface-2': 'var(--surface-2)',
+          border: 'var(--border)',
+          muted: 'var(--muted)',
+          'muted-foreground': 'var(--muted-foreground)',
+          accent: 'var(--accent)',
+          'accent-foreground': 'var(--accent-foreground)',
+          success: 'var(--success)',
+        },
+        borderRadius: { lg: '1.25rem' },
+      }
+    }
+  };
+</script>
+
+<link rel="stylesheet" href="form.css" />
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/html2canvas-pro@1.5.8/dist/html2canvas-pro.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js"></script>
+</head>
+<body class="font-display">
+  <div id="app" class="min-h-screen flex flex-col"></div>
+  <div id="print-root" aria-hidden="true"></div>
+  
+  <script src="form.js"></script>
+</body>
+</html>
